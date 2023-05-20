@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CrmController;
+
+//use App\Http\Controllers\CrmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,10 +40,10 @@ Route::put('/organizations/{id}', [CrmController::class, 'updateOrganization']);
 Route::delete('/organizations/{id}', [CrmController::class, 'deleteOrganization']);
 
 // Opportunities routes
-Route::get('/opportunities/{id}', [CrmController::class, 'getOpportunity']);
-Route::post('/opportunities', [CrmController::class, 'createOpportunity']);
-Route::put('/opportunities/{id}', [CrmController::class, 'updateOpportunity']);
-Route::delete('/opportunities/{id}', [CrmController::class, 'deleteOpportunity']);
+Route::get('/opportunities/{id}', [ActivityController::class, 'getOpportunity']);
+Route::post('/opportunities', [ActivityController::class, 'createOpportunity']);
+Route::put('/opportunities/{id}', [ActivityController::class, 'updateOpportunity']);
+Route::delete('/opportunities/{id}', [ActivityController::class, 'deleteOpportunity']);
 
 // Activities routes
 Route::get('/activities/{id}', [CrmController::class, 'getActivity']);
