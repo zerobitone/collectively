@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
+use App\Http\Controllers\Controller;
 use App\Models\AuthorRating;
 use Illuminate\Http\Request;
+
 class AuthorRatingController extends Controller
 {
     public function createAuthorRating(Request $request)

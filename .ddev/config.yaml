@@ -1,4 +1,4 @@
-name: mylaravel
+name: collectively
 type: laravel
 docroot: "public"
 php_version: "8.1"
@@ -38,7 +38,7 @@ nodejs_version: "16"
 # database:
 #   type: <dbtype> # mysql, mariadb
 #   version: <version> # database version, like "10.3" or "8.0"
-# Note that mariadb_version or mysql_version from v1.18 and earlier
+# NoteController that mariadb_version or mysql_version from v1.18 and earlier
 # will automatically be converted to this notation with just a "ddev config --auto"
 
 # router_http_port: <port>  # Port to be used for http (defaults to port 80)

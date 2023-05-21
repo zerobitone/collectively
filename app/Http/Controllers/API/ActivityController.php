@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Models\Activity;
+namespace App\Http\Controllers\API;
+use App\Http\Controllers\Auth;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
 class ActivityController extends Controller
 {
     public function createActivity(Request $request)

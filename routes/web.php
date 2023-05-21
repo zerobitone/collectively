@@ -1,6 +1,6 @@
 <?php
 
-use  App\Controller\IndexController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [IndexController::class, 'indexAction'])->name('index');
+Route::match(['GET','POST'],'/', [IndexController::class, 'indexAction'])->name('index');
