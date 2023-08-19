@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Meine App</title>
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
 </head>
 <body>
+
 <header>
     <!-- Header-Inhalt -->
 </header>
 
 <div class="content">
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
     @yield('content')
 </div>
 
@@ -17,7 +22,5 @@
     <!-- Footer-Inhalt -->
 </footer>
 
-<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-@yield('scripts')
 </body>
 </html>
