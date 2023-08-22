@@ -7,19 +7,19 @@
             @csrf
             <div class="mb-3">
                 <label for="inputUsername" class="form-label">Username</label>
-                <input type="text" class="form-control" name="username" id="inputUsername" placeholder="zerobit">
+                <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Student">
             </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="pst@zerobit.one">
+                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="stefanmalte.homberg@gfn.education">
             </div>
             <div class="mb-3">
                 <label for="INPUTsUBTITLE" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="pst@zerobit.one">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="stefanmalte.homberg@gfn.education">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="stefanmalte.homberg@gfn.education">
             </div>
         </form>
     </div>
