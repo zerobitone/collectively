@@ -16,6 +16,7 @@
         Hello world!
     </h1>
     @yield('content')
+
 </div>
 
 <footer>

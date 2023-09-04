@@ -14,4 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::match(['GET','POST'],'/', [IndexController::class, 'indexAction'])->name('index');
+Route::match(['GET', 'POST'], '/start', [IndexController::class, 'indexAction'])->name('start');
+Route::get('/blog', function () {
+    return view('blog');
+/*Route::match(['GET', 'POST'], '/blog', [IndexController::class, 'indexAction'])->name('blog');
+Route::get('/blog', function () {
+    return view('blog');
+*/
+});
+

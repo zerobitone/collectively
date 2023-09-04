@@ -65,7 +65,7 @@ cp .env.example .env
 
 #### 6. Run migrations
 ```bash
-./vendor/bin/sail artisan make:migration create_collectdb_database
+./vendor/bin/sail artisan make:migration create_collectdb1_database
 ```
 ```bash
 ./vendor/bin/sail artisan migrate

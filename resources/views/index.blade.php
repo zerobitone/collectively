@@ -2,6 +2,7 @@
 @section('title', 'Homepage')
 @section('content')
     <div class="container">
+
         <h1>Welcome to Collectively</h1>
         <form method="POST" action="{{route('index',[],false)}}">
             @csrf

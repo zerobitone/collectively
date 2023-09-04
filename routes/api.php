@@ -10,6 +10,7 @@ use App\Http\Controllers\API\RoleController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\CostumerController;
+use App\Http\Controllers\API\PostController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -27,6 +28,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/api/posts', [PostController::class, 'index']);
+
 
 // Customers routes
 Route::get('/customers/{id}', [CostumerController::class, 'getCustomer']);
